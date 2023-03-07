@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="container">
+        <div class="login_form">
+            <div class="form_content">
+                <header>LOGIN</header>
+
+                <form action="#" id="login-forms">
+                    <div class="inputfield">
+                        <span class="icons">
+                        <i class="bi bi-envelope"></i>
+                        </span>
+                        <input type="email" class="input1" id="email" placeholder="EmailId" required>
+                    </div>
+                    <div class="inputfield">
+                        <span class="icons">
+                        <i class="bi bi-lock"></i>
+                        </span>
+                        <input type="password" class="input2" id="pwd" placeholder="Password" required>
+                    </div>
+
+                    <div class="remember">
+                        <label for="">
+                            <input type="checkbox"  id="rem_me">Remember Me
+                        </label>
+                    </div>
+
+                     <div class="buttonfield">
+                        <button type="submit" id="submit-button" >Login</button>
+                     </div>
+
+                     <div class="ptag">
+                        <span>Or login with</span>
+                     </div>
+
+                     <div class="other_options">
+                        <a href="#" class="fb">
+                            <i class="bi bi-facebook"></i>
+                            <span>facebook</span>
+                        </a>
+                     </div>
+                     <div class="other_options">
+                        <a href="#" class="google">
+                            <img src="Google_icon-icons.com_66793.png" alt="Google" class="googleimg">
+                            <span>Google</span>
+                        </a>
+                     </div>
+                    </form>
+
+                    <div class="linkform">
+                       <span>Not a member?<a href="#" class="link signup_link">Sign up now</a>
+                       </span>
+                    </div>
+            </div>
+
+        </div>
+        </section>
+
+
+     <script>
+        const loginForm = document.getElementById("login-form");
+        const submitButton = document.getElementById("submit-button");
+        submitButton.addEventListener("click", (event) => {
+        event.preventDefault(); 
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("pwd").value;   
+        if(email=="admin@gmail.com" && password=="admin"){
+        alert("Login Successfull!!! " );
+        window.location.href = "welcome.html";
+        }
+        else{
+        alert("Invalid ");
+        return;
+        }  
+        });
+     </script>
+</body>
+</html>

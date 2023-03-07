@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: blueviolet;
+}
+
+/*CSS for login form*/
+.container{
+    height: 520px;
+    width: 380px;
+    background-color: whitesmoke;
+    margin-left:38% ;
+    margin-top: 50px;
+    display: flex;
+    
+}
+.container .login_form{
+    background: whitesmoke;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+}
+header{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+   
+}
+
+form .inputfield{
+    height: 45px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .4rem;
+      
+}
+form .inputfield:hover{
+    border: 1px solid black;
+}
+form .inputfield:focus{
+    border-bottom-width:2px ;
+}
+.inputfield input{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.inputfield .icons{
+    position: relative;
+    top: 10px;
+    left: 0;
+    font-size: 19px;
+    display: flex;
+    color: gray;
+
+}
+
+
+.remember{
+    margin: 15px 0 15px;
+    font-size: 15px;
+    justify-content: left;
+}
+
+
+.remember label #rem_me{
+    margin-right: 4px;
+    accent-color: blue;
+    
+
+}
+form .buttonfield button{
+    margin-top: 10px;
+    height: 40px;
+    width: 80%;
+    margin-left: 30px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: 400;
+    font-size: larger;
+    background-color: rgb(91, 91, 206);
+    border: none;
+    margin-bottom: 40px;
+}
+form .buttonfield button:hover{
+    border: 2px solid black;
+}
+
+.inputfield input, .buttonfield button{
+    height: 90%;
+    width: 100%;
+}
+.ptag span{
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 110px;
+    margin-top: 30px;
+    font-size: larger;
+    
+    
+}
+.linkform{
+    text-align: center;
+    margin-top: 100px;
+}
+.linkform span, 
+.linkform span a{
+    font-size: 15px;
+    font-weight: 500;
+}
+.linkform a{
+    text-decoration: none;
+    color: rgb(71, 71, 194);
+}
+
+.linkform a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.other_options .fb {
+    display: flex;
+    background-color: white;
+    height: 30px;
+    width: 45%;
+    border: 1px solid black;
+    align-items: center;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: larger;
+    float: left;
+}
+.other_options a i{
+    color: blue;
+    left: 35px;
+    margin-left: 15px;
+    top: 50%;
+    transform: translateZ(-50%);
+}
+.other_options a span{
+    padding-left: 15px;
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
+.other_options .google {
+    display: flex;
+    background-color: white;
+    height: 30px;
+    width: 45%;
+    border: 1px solid black;
+    align-items: center;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: larger;
+    float: right;
+    
+}
+.other_options img.googleimg{
+    height: 18px;
+    width: 18px;
+    color: blue;
+    left: 35px;
+    margin-left: 15px;
+    top: 50%;
+    transform: translateZ(-50%);
+
+}
+.other_options .google span{
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/*CSS for Sign up form*/
+
+.container .signup_form{
+    background: whitesmoke;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+   /* opacity: 0;
+    pointer-events: none;*/
+}
+/*.container .show-signup .container .signup_form{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.container .show-signup .container .login_form{
+    opacity: 0;
+    pointer-events: none;
+
+}*/
+ 
+
+.signup_form .buttonfield button{
+    margin-top: 80px;
+    height: 40px;
+    width: 80%;
+    margin-left: 30px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: 400;
+    font-size: larger;
+    background-color: rgb(91, 91, 206);
+    border: none;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width:400px){
+    .container{
+        padding: 15px 10px;
+    }
+    
+}
+
+
+
